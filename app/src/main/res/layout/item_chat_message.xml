@@ -1,0 +1,38 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:maxWidth="240dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:maxWidth="240dp"
+        android:background="@color/colorPrimary"
+        android:layout_margin="8dp"
+        android:text="test msg"
+            />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myCustomAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_answer"
+        tools:itemCount="1"/>
+
+    </LinearLayout>
+
+    <!-- item_chat_message.xml -->
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/messageTextView"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="8dp"-->
+<!--    android:maxWidth="240dp"-->
+<!--    android:background="@color/colorPrimary"-->
+<!--    android:layout_margin="8dp"-->
+<!--    android:text="test msg"/>-->
+

@@ -1,0 +1,82 @@
+<!-- custom_question_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/option1Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/option2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/option3Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/option4Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/option5Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/option6Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/option7Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add more buttons for additional options if needed -->
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <!-- Chatbot Header -->
+    <LinearLayout
+        android:id="@+id/chatbotHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/nextQuestion"
+        android:layout_marginBottom="10dp">
+
+        <!-- Chatbot Icon and Name -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_bot" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                android:text="Chatbot"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- RecyclerView to display chat messages -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_chat_message"/>
+
+    </LinearLayout>
+
+    <!-- RecyclerView to display answers -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/answersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/chatbotHeader"
+        android:layout_above="@id/nextQuestion"
+        android:layout_marginBottom="16dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_chat_message"/>
+
+    <!-- Button to initiate chat -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:visibility="gone"
+        android:text="Next Question"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_square"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chatting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="Click here to chat"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_square"/>
+
+</RelativeLayout>
